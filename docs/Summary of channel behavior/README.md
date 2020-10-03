@@ -1,3 +1,10 @@
+---
+layout: default
+title: Summary of channel behavior
+nav_order: 2
+description: " Summary of channel behavior "
+---
+
 # Summary of channel behavior
 
 Summary 📝 of state of a channel 🆚 operations in Go.

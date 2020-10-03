@@ -1,3 +1,11 @@
+---
+layout: default
+title: An ultimate collection Go tips 🚀️
+nav_order: 1
+description: " An ultimate collection Go tips 🚀️  "
+permalink: /
+---
+
 # An ultimate collection Go tips 🚀️
 
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgotips.github.io%2F)
