@@ -1,0 +1,17 @@
+# Sample Authors
+# Remove file or replace with your own
+
+Akshay Bharambe:
+  name: Akshay Bharambe
+  picture: /images/bio-photo-2.jpg
+  twitter: "@akshaybharambe1"
+  links:
+    - title: Twitter
+      url: https://twitter.com/akshaybharambe1
+      icon: fab fa-twitter-square
+    - title: GitHub
+      url: https://github.com/akshaybharambe14
+      icon: fab fa-github-square
+    - title: Linkedin
+      url: https://www.linkedin.com/in/akshaybharambe14/
+      icon: fab fa-linkedin

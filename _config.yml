@@ -18,22 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+skin: "/assets/css/skins/default.css"
+locale: en-US
+title: "An ultimate collection Go tips 🚀️"
+# email: akshaybharambe14@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+  An ultimate collection Go tips 🚀️ to provide short but meaningful infographics.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "gotips.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/images/logo.png" # path of site logo, e.g. "/assets/images/logo.png"
+read_time: true
+words_per_minute: 200
+mathjax:
+  enable: true
+#  combo: "tex-mml-chtml"
+#  tags: "none"
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+twitter_username: akshaybharambe1
+github_username: akshaybharambe14
 
 # Build settings
 # theme: minima
 theme: jekyll-theme-so-simple
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -53,3 +65,107 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+disqus:
+  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+twitter:
+  username: akshaybharambe1 # site's Twitter username
+
+# Liquid
+liquid:
+  error_mode: strict
+
+# Build settings
+markdown: kramdown
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
+
+# Search
+search_full_content: true
+
+# Taxonomy pages
+# category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+# Collections
+# collections:
+#   recipes:
+#     output: true
+#     permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Recipe defaults
+  # - scope:
+  #     path: "_recipes"
+  #     type: recipes
+  #   values:
+  #     layout: post
+  #     comments: true
+  #     share: true
+
+# Site Author
+author:
+  name: Akshay Bharambe
+  picture: /images/akshay_bharambe.jpg
+  email: akshaybharambe14@gmail.com
+  twitter: akshaybharambe1
+  links:
+    - title: Twitter
+      url: https://twitter.com/akshaybharambe1
+      icon: fab fa-twitter-square
+    # - title: Instagram
+    #   url: https://instagram.com/mmistakes
+    #   icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/akshaybharambe14
+      icon: fab fa-github-square
+    - title: Linkedin
+      url: https://www.linkedin.com/in/akshaybharambe14/
+      icon: fab fa-linkedin
+
+# Footer Links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/akshaybharambe1
+    icon: fab fa-twitter-square
+  - title: GitHub
+    url: https://github.com/akshaybharambe14
+    icon: fab fa-github-square
+  - title: Linkedin
+    url: https://www.linkedin.com/in/akshaybharambe14/
+    icon: fab fa-linkedin
+  # - title: Feed
+  #   url: atom.xml
+  #   icon: fas fa-rss-square
