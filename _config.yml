@@ -67,8 +67,14 @@ theme: jekyll-theme-so-simple
 #   - vendor/ruby/
 
 google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+# site:
+#   owner:
+#     disqus-shortname: gotips
 disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: "gotips"
+# disqus:
+#   shortname: gotips # Disqus shortname, e.g. "my_disqus_shortname"
+# comments: true
 twitter:
   username: akshaybharambe1 # site's Twitter username
 
